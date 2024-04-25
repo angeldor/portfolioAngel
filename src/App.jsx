@@ -1,12 +1,13 @@
-import { useState } from 'react'
-import Sidenav from './components/Sidenav'
+import { BrowserRouter } from "react-router-dom"
+import AppRouter from "./router/AppRouter"
+
 
 function App() {
 
   return (
-    <div>
-      <Sidenav/>
-    </div>
+    <BrowserRouter>
+    <AppRouter/>
+    </BrowserRouter>
   )
 }
 
